@@ -59,13 +59,19 @@ def calc_bfi_scores(bfi_list, imdb_list):
 
 imdb_list = get_imdb_list()
 bfi_list = get_bfi_list()
-# calc scores for the bfi_list based of the imdb_list scores
-bfi_list = calc_bfi_scores(bfi_list, imdb_list)
-pprint(bfi_list)
-#pprint(imdb_list)
 
-# calculate points for each movie:
-# - get weight for each lists
-# - place_points = invert place?
-# - points = weight * place_points
-# - combine the lists
+
+def combine_lists(bfi_list, imdb_list):
+    combined_list = bfi_list + imdb_list
+    #NOTE: do we need to deal with duplicates here? (could manually fix bfi)
+    combined_list = sorted(combined_list, key=lambda k: k['score'])
+    combined_list.reverse()
+    return combined_list
+
+bfi_list = calc_bfi_scores(bfi_list, imdb_list)
+combined_list = combine_lists(bfi_list, imdb_list)
+
+pos = 0
+for film in combined_list:
+    pos += 1
+    print '%s %s %s' % (pos, film['name'], film['score'])
