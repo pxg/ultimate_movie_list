@@ -1,10 +1,12 @@
 import sys
 from pprint import pprint
+from decimal import Decimal
+
 
 # TODO: have extra function for reading the lines into a list
 def get_imdb_list():
     """
-    Read the imdb file and return a list
+    Read the imdb file and return a list of dicts
     """
     #TODO: read the whole file and just get the line we want
     list_file = 'imdb.txt'
@@ -21,9 +23,10 @@ def get_imdb_list():
     f.close()
     return list
 
+
 def get_bfi_list():
     """
-    Read the imdb file and return a list
+    Read the bfi file and return a list of dicts
     """
     list_file = 'bfi_sight_and_sound_2012.txt'
     f = open(list_file, 'r')
@@ -36,11 +39,28 @@ def get_bfi_list():
     return list
 
 
+def calc_bfi_scores(bfi_list, imdb_list):
+    """
+    Calculate the BFI scores from their position and the IMDB scores
+    """
+    num_scores = len(bfi_list)
+    best_score = Decimal(imdb_list[0]['score'])
+    worst_score = Decimal(imdb_list[num_scores]['score'])
+    score_interval = (best_score - worst_score) / num_scores
+    # print best_score
+    # print worst_score
+    # print score_interval
+    # sys.exit()
+    score = best_score
+    for film in bfi_list:
+        film['score'] = score
+        score -= score_interval
+    return bfi_list
+
 imdb_list = get_imdb_list()
 bfi_list = get_bfi_list()
-#calc scores for the bfi_list based of the imdb_list scores
-#bfi_list = calc_scores(bfi_list, imdb_list)
-
+# calc scores for the bfi_list based of the imdb_list scores
+bfi_list = calc_bfi_scores(bfi_list, imdb_list)
 pprint(bfi_list)
 #pprint(imdb_list)
 
