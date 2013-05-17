@@ -18,7 +18,7 @@ def get_imdb_list():
     for line in f:
         pos += 1
         words = line.split()
-        film = {'pos': pos, 'score': words[2], 'name': line[name_column:-1]}
+        film = {'pos': pos, 'score': Decimal(words[2]), 'name': line[name_column:-1]}
         list.append(film)
     f.close()
     return list
@@ -31,8 +31,11 @@ def get_bfi_list():
     list_file = 'bfi_sight_and_sound_2012.txt'
     f = open(list_file, 'r')
     list = []
+
     for line in f:
         words = line.split('    ')
+        #NOTE: pos is not the position in the pyton list but in the original
+        # list so is not always an integer due to joint places
         film = {'pos': words[0], 'name': words[1][:-1]}
         list.append(film)
     f.close()
@@ -44,14 +47,11 @@ def calc_bfi_scores(bfi_list, imdb_list):
     Calculate the BFI scores from their position and the IMDB scores
     """
     num_scores = len(bfi_list)
-    best_score = Decimal(imdb_list[0]['score'])
-    worst_score = Decimal(imdb_list[num_scores]['score'])
+    best_score = imdb_list[0]['score']
+    worst_score = imdb_list[num_scores]['score']
     score_interval = (best_score - worst_score) / num_scores
-    # print best_score
-    # print worst_score
-    # print score_interval
-    # sys.exit()
     score = best_score
+
     for film in bfi_list:
         film['score'] = score
         score -= score_interval
