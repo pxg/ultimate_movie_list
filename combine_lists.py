@@ -3,12 +3,10 @@ from pprint import pprint
 from decimal import Decimal
 
 
-# TODO: have extra function for reading the lines into a list
 def get_imdb_list():
     """
     Read the imdb file and return a list of dicts
     """
-    #TODO: read the whole file and just get the line we want
     list_file = 'imdb.txt'
     name_column = 26
     f = open(list_file, 'r')
@@ -61,7 +59,12 @@ imdb_list = get_imdb_list()
 bfi_list = get_bfi_list()
 
 
+#TODO: just accept a list of lists and combine so we don't have to keep adding
+# new parameters for the function
 def combine_lists(bfi_list, imdb_list):
+    """
+    Combine the lists and order by the score
+    """
     combined_list = bfi_list + imdb_list
     #NOTE: do we need to deal with duplicates here? (could manually fix bfi)
     combined_list = sorted(combined_list, key=lambda k: k['score'])
