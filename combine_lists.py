@@ -74,4 +74,4 @@ combined_list = combine_lists(bfi_list, imdb_list)
 pos = 0
 for film in combined_list:
     pos += 1
-    print '%s %s %s' % (pos, film['name'], film['score'])
+    print '%s %s. Score %s' % (pos, film['name'], film['score'])

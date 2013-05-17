@@ -1,0 +1,261 @@
+1 The Godfather (1972). Score 9.2
+2 The Shawshank Redemption (1994). Score 9.2
+3 The Master. Score 9.2
+4 Tabu. Score 9.163636363636363636363636364
+5 Amour. Score 9.127272727272727272727272728
+6 Holy Motors. Score 9.090909090909090909090909092
+7 Beasts of the Southern Wild. Score 9.054545454545454545454545456
+8 Berberian Sound Studio. Score 9.018181818181818181818181820
+9 The Godfather: Part II (1974). Score 9.0
+10 Moonrise Kingdom. Score 8.981818181818181818181818184
+11 Beyond the Hills. Score 8.945454545454545454545454548
+12 Cosmopolis. Score 8.909090909090909090909090912
+13 Schindler's List (1993). Score 8.9
+14 The Dark Knight (2008). Score 8.9
+15 12 Angry Men (1957). Score 8.9
+16 Il buono, il brutto, il cattivo. (1966). Score 8.9
+17 Pulp Fiction (1994). Score 8.9
+18 Once upon a Time in Anatolia. Score 8.872727272727272727272727276
+19 This Is Not a Film. Score 8.836363636363636363636363640
+20 One Flew Over the Cuckoo's Nest (1975). Score 8.8
+21 The Lord of the Rings: The Fellowship of the Ring (2001). Score 8.8
+22 Star Wars: Episode V - The Empire Strikes Back (1980). Score 8.8
+23 Fight Club (1999). Score 8.8
+24 The Lord of the Rings: The Return of the King (2003). Score 8.8
+25 Cidade de Deus (2002). Score 8.7
+26 The Lord of the Rings: The Two Towers (2002). Score 8.7
+27 The Matrix (1999). Score 8.7
+28 Forrest Gump (1994). Score 8.7
+29 Shichinin no samurai (1954). Score 8.7
+30 Star Wars (1977). Score 8.7
+31 Goodfellas (1990). Score 8.7
+32 Inception (2010). Score 8.7
+33 Léon (1994). Score 8.6
+34 Psycho (1960). Score 8.6
+35 It's a Wonderful Life (1946). Score 8.6
+36 Rear Window (1954). Score 8.6
+37 Raiders of the Lost Ark (1981). Score 8.6
+38 The Usual Suspects (1995). Score 8.6
+39 Casablanca (1942). Score 8.6
+40 C'era una volta il West (1968). Score 8.6
+41 The Silence of the Lambs (1991). Score 8.6
+42 Se7en (1995). Score 8.6
+43 The Dark Knight Rises (2012). Score 8.5
+44 The Pianist (2002). Score 8.5
+45 The Shining (1980). Score 8.5
+46 Back to the Future (1985). Score 8.5
+47 Citizen Kane (1941). Score 8.5
+48 Django Unchained (2012). Score 8.5
+49 Modern Times (1936). Score 8.5
+50 North by Northwest (1959). Score 8.5
+51 Sen to Chihiro no kamikakushi (2001). Score 8.5
+52 Alien (1979). Score 8.5
+53 City Lights (1931). Score 8.5
+54 Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964). Score 8.5
+55 Saving Private Ryan (1998). Score 8.5
+56 Terminator 2: Judgment Day (1991). Score 8.5
+57 Apocalypse Now (1979). Score 8.5
+58 Memento (2000). Score 8.5
+59 American History X (1998). Score 8.5
+60 Sunset Blvd. (1950). Score 8.5
+61 Nuovo Cinema Paradiso (1988). Score 8.4
+62 Das Boot (1981). Score 8.4
+63 Reservoir Dogs (1992). Score 8.4
+64 To Kill a Mockingbird (1962). Score 8.4
+65 Lawrence of Arabia (1962). Score 8.4
+66 The Prestige (2006). Score 8.4
+67 Le fabuleux destin d'Amélie Poulain (2001). Score 8.4
+68 The Great Dictator (1940). Score 8.4
+69 A Clockwork Orange (1971). Score 8.4
+70 Gladiator (2000). Score 8.4
+71 The Green Mile (1999). Score 8.4
+72 Intouchables (2011). Score 8.4
+73 Das Leben der Anderen (2006). Score 8.4
+74 WALL·E (2008). Score 8.4
+75 Toy Story 3 (2010). Score 8.4
+76 Aliens (1986). Score 8.4
+77 Double Indemnity (1944). Score 8.4
+78 Taxi Driver (1976). Score 8.4
+79 American Beauty (1999). Score 8.4
+80 Paths of Glory (1957). Score 8.4
+81 Vertigo (1958). Score 8.4
+82 M (1931). Score 8.4
+83 The Departed (2006). Score 8.4
+84 La vita è bella (1997). Score 8.4
+85 Per qualche dollaro in più (1965). Score 8.3
+86 Snatch. (2000). Score 8.3
+87 Inglourious Basterds (2009). Score 8.3
+88 Yôjinbô (1961). Score 8.3
+89 Jodaeiye Nader az Simin (2011). Score 8.3
+90 Batman Begins (2005). Score 8.3
+91 Die Hard (1988). Score 8.3
+92 Witness for the Prosecution (1957). Score 8.3
+93 Hotaru no haka (1988). Score 8.3
+94 The Bridge on the River Kwai (1957). Score 8.3
+95 Raging Bull (1980). Score 8.3
+96 The Apartment (1960). Score 8.3
+97 Indiana Jones and the Last Crusade (1989). Score 8.3
+98 Unforgiven (1992). Score 8.3
+99 The Sting (1973). Score 8.3
+100 All About Eve (1950). Score 8.3
+101 2001: A Space Odyssey (1968). Score 8.3
+102 Mononoke-hime (1997). Score 8.3
+103 Rashômon (1950). Score 8.3
+104 Amadeus (1984). Score 8.3
+105 Metropolis (1927). Score 8.3
+106 Ladri di biciclette (1948). Score 8.3
+107 Some Like It Hot (1959). Score 8.3
+108 Monty Python and the Holy Grail (1975). Score 8.3
+109 Singin' in the Rain (1952). Score 8.3
+110 Oldeuboi (2003). Score 8.3
+111 Chinatown (1974). Score 8.3
+112 Braveheart (1995). Score 8.3
+113 L.A. Confidential (1997). Score 8.3
+114 Full Metal Jacket (1987). Score 8.3
+115 Star Wars: Episode VI - Return of the Jedi (1983). Score 8.3
+116 Once Upon a Time in America (1984). Score 8.3
+117 Eternal Sunshine of the Spotless Mind (2004). Score 8.3
+118 The Treasure of the Sierra Madre (1948). Score 8.3
+119 The Lion King (1994). Score 8.3
+120 Requiem for a Dream (2000). Score 8.3
+121 The Third Man (1949). Score 8.3
+122 The Gold Rush (1925). Score 8.2
+123 Cool Hand Luke (1967). Score 8.2
+124 The Deer Hunter (1978). Score 8.2
+125 Touch of Evil (1958). Score 8.2
+126 The Big Lebowski (1998). Score 8.2
+127 Ran (1985). Score 8.2
+128 Fargo (1996). Score 8.2
+129 Scarface (1983). Score 8.2
+130 Smultronstället (1957). Score 8.2
+131 Gran Torino (2008). Score 8.2
+132 Rebecca (1940). Score 8.2
+133 The Kid (1921). Score 8.2
+134 Blade Runner (1982). Score 8.2
+135 The Maltese Falcon (1941). Score 8.2
+136 The General (1926). Score 8.2
+137 Heat (1995). Score 8.2
+138 Det sjunde inseglet (1957). Score 8.2
+139 The Elephant Man (1980). Score 8.2
+140 On the Waterfront (1954). Score 8.2
+141 Toy Story (1995). Score 8.2
+142 Up (2009). Score 8.2
+143 Mr. Smith Goes to Washington (1939). Score 8.2
+144 Der Untergang (2004). Score 8.2
+145 El laberinto del fauno (2006). Score 8.2
+146 The Great Escape (1963). Score 8.2
+147 Hauru no ugoku shiro (2004). Score 8.1
+148 Gandhi (1982). Score 8.1
+149 Persona (1966). Score 8.1
+150 The Bourne Ultimatum (2007). Score 8.1
+151 Black Swan (2010). Score 8.1
+152 Amores perros (2000). Score 8.1
+153 Les quatre cents coups (1959). Score 8.1
+154 Mary and Max (2009). Score 8.1
+155 Dog Day Afternoon (1975). Score 8.1
+156 Twelve Monkeys (1995). Score 8.1
+157 Donnie Darko (2001). Score 8.1
+158 Groundhog Day (1993). Score 8.1
+159 Stand by Me (1986). Score 8.1
+160 Million Dollar Baby (2004). Score 8.1
+161 Network (1976). Score 8.1
+162 Ben-Hur (1959). Score 8.1
+163 The Terminator (1984). Score 8.1
+164 The Big Sleep (1946). Score 8.1
+165 The Night of the Hunter (1955). Score 8.1
+166 There Will Be Blood (2007). Score 8.1
+167 The King's Speech (2010). Score 8.1
+168 How to Train Your Dragon (2010). Score 8.1
+169 Dial M for Murder (1954). Score 8.1
+170 Life of Brian (1979). Score 8.1
+171 Finding Nemo (2003). Score 8.1
+172 Into the Wild (2007). Score 8.1
+173 V for Vendetta (2005). Score 8.1
+174 Notorious (1946). Score 8.1
+175 Tonari no Totoro (1988). Score 8.1
+176 The Grapes of Wrath (1940). Score 8.1
+177 Gone with the Wind (1939). Score 8.1
+178 Annie Hall (1977). Score 8.1
+179 El secreto de sus ojos (2009). Score 8.1
+180 Warrior (2011). Score 8.1
+181 Kill Bill: Vol. 1 (2003). Score 8.1
+182 Hotel Rwanda (2004). Score 8.1
+183 The Avengers (2012). Score 8.1
+184 High Noon (1952). Score 8.1
+185 Good Will Hunting (1997). Score 8.1
+186 The Wizard of Oz (1939). Score 8.1
+187 Trainspotting (1996). Score 8.1
+188 Butch Cassidy and the Sundance Kid (1969). Score 8.1
+189 The Thing (1982). Score 8.1
+190 Platoon (1986). Score 8.1
+191 Jaws (1975). Score 8.1
+192 The Sixth Sense (1999). Score 8.1
+193 Casino (1995). Score 8.1
+194 Strangers on a Train (1951). Score 8.1
+195 Sin City (2005). Score 8.1
+196 It Happened One Night (1934). Score 8.1
+197 No Country for Old Men (2007). Score 8.1
+198 Lock, Stock and Two Smoking Barrels (1998). Score 8.1
+199 Trois couleurs: Rouge (1994). Score 8.0
+200 Bom yeoreum gaeul gyeoul geurigo bom (2003). Score 8.0
+201 Nosferatu, eine Symphonie des Grauens (1922). Score 8.0
+202 The Perks of Being a Wallflower (2012). Score 8.0
+203 Manhattan (1979). Score 8.0
+204 Papillon (1973). Score 8.0
+205 Mystic River (2003). Score 8.0
+206 Harvey (1950). Score 8.0
+207 Taare Zameen Par (2007). Score 8.0
+208 Kaze no tani no Naushika (1984). Score 8.0
+209 Rosemary's Baby (1968). Score 8.0
+210 Rain Man (1988). Score 8.0
+211 All Quiet on the Western Front (1930). Score 8.0
+212 3 Idiots (2009). Score 8.0
+213 Incendies (2010). Score 8.0
+214 Beauty and the Beast (1991). Score 8.0
+215 Shutter Island (2010). Score 8.0
+216 La haine (1995). Score 8.0
+217 Jurassic Park (1993). Score 8.0
+218 A Streetcar Named Desire (1951). Score 8.0
+219 Star Trek (2009). Score 8.0
+220 Ratatouille (2007). Score 8.0
+221 Le scaphandre et le papillon (2007). Score 8.0
+222 Yip Man (2008). Score 8.0
+223 Harry Potter and the Deathly Hallows: Part 2 (2011). Score 8.0
+224 Per un pugno di dollari (1964). Score 8.0
+225 District 9 (2009). Score 8.0
+226 Monsters, Inc. (2001). Score 8.0
+227 Salinui chueok (2003). Score 8.0
+228 The Truman Show (1998). Score 8.0
+229 Pirates of the Caribbean: The Curse of the Black Pearl (2003). Score 8.0
+230 Roman Holiday (1953). Score 8.0
+231 Mou gaan dou (2002). Score 8.0
+232 Stalker (1979). Score 8.0
+233 In the Name of the Father (1993). Score 8.0
+234 Sleuth (1972). Score 8.0
+235 The Artist (2011/I). Score 8.0
+236 Stalag 17 (1953). Score 8.0
+237 Barry Lyndon (1975). Score 8.0
+238 Rope (1948). Score 8.0
+239 The Man Who Shot Liberty Valance (1962). Score 8.0
+240 The Wild Bunch (1969). Score 8.0
+241 The Exorcist (1973). Score 8.0
+242 The Manchurian Candidate (1962). Score 8.0
+243 Anatomy of a Murder (1959). Score 8.0
+244 Rocky (1976). Score 8.0
+245 Slumdog Millionaire (2008). Score 8.0
+246 La strada (1954). Score 8.0
+247 Who's Afraid of Virginia Woolf? (1966). Score 8.0
+248 The Hustler (1961). Score 8.0
+249 The Hobbit: An Unexpected Journey (2012). Score 8.0
+250 Life of Pi (2012). Score 8.0
+251 8½ (1963). Score 8.0
+252 The Princess Bride (1987). Score 8.0
+253 A Beautiful Mind (2001). Score 8.0
+254 The Graduate (1967). Score 8.0
+255 The Killing (1956). Score 8.0
+256 Big Fish (2003). Score 7.9
+257 The Wrestler (2008). Score 7.9
+258 Festen (1998). Score 7.9
+259 Fa yeung nin wa (2000). Score 7.9
+260 The Untouchables (1987). Score 7.9
+261 The Help (2011). Score 7.9
