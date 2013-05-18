@@ -66,6 +66,23 @@ def sight_and_sound_api():
     return Response(json.dumps(film_list, cls=DecimalEncoder),
                     mimetype='application/json')
 
+
+@app.route('/oscar-best-picture')
+def oscar_best_picture():
+    film_list = get_oscars_best_picture_list()
+    return render_template('list.html',
+                           film_list=film_list,
+                           title='Oscar Best Picture',
+                           url='http://www.oscars.org/awards/academyawards/legacy/best-pictures.html')
+
+
+@app.route('/oscar-best-picture/json')
+def oscar_best_picture_api():
+    film_list = get_oscars_best_picture_list()
+    return Response(json.dumps(film_list, cls=DecimalEncoder),
+                    mimetype='application/json')
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
