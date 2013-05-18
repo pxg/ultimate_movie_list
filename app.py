@@ -1,6 +1,6 @@
 import json
 import decimal
-from flask import Flask, Response, render_template, jsonify
+from flask import Flask, Response, render_template, request
 from combine_lists import *
 app = Flask(__name__)
 
@@ -26,7 +26,6 @@ def ultimate_list():
     film_list = get_ultimate_movie_list()
     return render_template('list.html', film_list=film_list)
 
-#TODO: Link to all Oscar winners
 
 @app.route('/ultimate-list/json')
 def ultimate_list_api():
@@ -81,6 +80,19 @@ def oscar_best_picture_api():
     film_list = get_oscars_best_picture_list()
     return Response(json.dumps(film_list, cls=DecimalEncoder),
                     mimetype='application/json')
+
+
+@app.route('/oscar-all')
+def oscar_all():
+    film_list = get_all_oscars_list()
+    if request.args.get('format') == 'json':
+        return Response(json.dumps(film_list, cls=DecimalEncoder),
+                        mimetype='application/json')
+    else:
+        return render_template('list.html',
+                               film_list=film_list,
+                               title='Oscar All Winners',
+                               url='http://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films')
 
 
 if __name__ == '__main__':

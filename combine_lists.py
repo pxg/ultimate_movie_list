@@ -4,7 +4,7 @@ from pprint import pprint
 import sys
 
 
-def get_oscars_list():
+def get_all_oscars_list():
     """
     Read the oscars file and return a list of dicts of every single film which
     has ever won an oscar
@@ -27,7 +27,7 @@ def get_oscars_list():
                     'name': links[0].contents[0],
                     'year': links[1].contents[0],
                     'awards': awards,
-                    'nominations': cells[3].contents
+                    'nominations': cells[3].contents[0]
                 }
                 film_list.append(film)
         except Exception:
