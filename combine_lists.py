@@ -1,5 +1,7 @@
 from BeautifulSoup import BeautifulSoup
 from decimal import Decimal
+from pprint import pprint
+import sys
 
 
 def get_oscars_list():
@@ -55,6 +57,14 @@ def get_oscars_best_picture_list():
     # Reverse as we want newest first not last
     film_list.reverse()
     return film_list
+
+
+def get_bfi_list_with_scores(imdb_list):
+    """
+    Wrapper function to get the BFI list then calculate a score for each film
+    """
+    bfi_list = get_bfi_list()
+    return calc_scores(bfi_list, imdb_list)
 
 
 def get_imdb_list():
@@ -161,8 +171,7 @@ def get_ultimate_movie_list():
     Get and combine all the other lists
     """
     imdb_list = get_imdb_list()
-    bfi_list = get_bfi_list()
-    bfi_list = calc_scores(bfi_list, imdb_list)
+    bfi_list = get_bfi_list_with_scores(imdb_list)
     oscars_list = get_oscars_best_picture_list()
     combined_list = combine_lists(bfi_list, imdb_list)
     return combine_oscars(combined_list, oscars_list)
