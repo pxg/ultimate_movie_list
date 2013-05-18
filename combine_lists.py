@@ -139,18 +139,19 @@ def combine_oscars(combined_list, oscars_list):
     for existing films
     """
     #TODO: can we do this without the nested loops?
+    low_score = combined_list[-1]['score'] - Decimal(0.1)
     no_match = 0
     for oscar_film in oscars_list:
         exists = False
         for film in combined_list:
             if film['name'] == oscar_film['name']:
-                film['score'] += 100
+                film['score'] += 1
                 film['oscar'] = 'Best Picture'
                 exists = True
                 # print film
                 # sys.exit()
         if exists is False:
-            oscar_film['score'] = 0  #TODO: we should get IMDB rating here?
+            oscar_film['score'] = low_score  #TODO: we should get IMDB rating here?
             combined_list.append(oscar_film)
             no_match += 1
 
