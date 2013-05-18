@@ -52,16 +52,17 @@ def imdb_api():
 
 
 @app.route('/sight-and-sound')
-def imdb():
-    film_list = get_imdb_list()
+def sight_and_sound():
+    film_list = get_bfi_list_with_scores(get_imdb_list())
     return render_template('list.html',
                            film_list=film_list,
-                           title='IMDB Top 250',
-                           url='http://www.imdb.com/chart/top')
+                           title='BFI top 11 films of 2012',
+                           url='http://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/top-11-films-2012')
+
 
 @app.route('/sight-and-sound/json')
-def imdb_api():
-    film_list = get_imdb_list()
+def sight_and_sound_api():
+    film_list = get_bfi_list_with_scores(get_imdb_list())
     return Response(json.dumps(film_list, cls=DecimalEncoder),
                     mimetype='application/json')
 

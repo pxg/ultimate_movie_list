@@ -168,7 +168,7 @@ def combine_oscars(combined_list, oscars_list):
 
 def get_ultimate_movie_list():
     """
-    Get and combine all the other lists
+    Get and combine all other lists
     """
     imdb_list = get_imdb_list()
     bfi_list = get_bfi_list_with_scores(imdb_list)
