@@ -1,0 +1,310 @@
+1 The Godfather. Score 10.20
+2 The Godfather: Part II. Score 10.00
+3 Schindler's List. Score 9.90
+4 The Lord of the Rings: The Return of the King. Score 9.80
+5 One Flew Over the Cuckoo's Nest. Score 9.80
+6 Forrest Gump. Score 9.70
+7 The Silence of the Lambs. Score 9.60
+8 Casablanca. Score 9.60
+9 The Departed. Score 9.40
+10 American Beauty. Score 9.40
+11 Gladiator. Score 9.40
+12 Lawrence of Arabia. Score 9.40
+13 Braveheart. Score 9.30
+14 Amadeus. Score 9.30
+15 All About Eve. Score 9.30
+16 The Sting. Score 9.30
+17 Unforgiven. Score 9.30
+18 The Apartment. Score 9.30
+19 The Bridge on the River Kwai. Score 9.30
+20 On the Waterfront. Score 9.20
+21 Rebecca. Score 9.20
+22 The Deer Hunter. Score 9.20
+23 The Master. Score 9.20
+24 The Shawshank Redemption. Score 9.20
+25 Tabu. Score 9.16
+26 Amour. Score 9.13
+27 No Country for Old Men. Score 9.10
+28 It Happened One Night. Score 9.10
+29 Platoon. Score 9.10
+30 Annie Hall. Score 9.10
+31 Gone with the Wind. Score 9.10
+32 The King's Speech. Score 9.10
+33 Million Dollar Baby. Score 9.10
+34 Gandhi. Score 9.10
+35 Holy Motors. Score 9.09
+36 Beasts of the Southern Wild. Score 9.05
+37 Berberian Sound Studio. Score 9.02
+38 A Beautiful Mind. Score 9.00
+39 Slumdog Millionaire. Score 9.00
+40 Rocky. Score 9.00
+41 The Artist. Score 9.00
+42 All Quiet on the Western Front. Score 9.00
+43 Rain Man. Score 9.00
+44 Moonrise Kingdom. Score 8.98
+45 Beyond the Hills. Score 8.95
+46 Cosmopolis. Score 8.91
+47 Pulp Fiction. Score 8.90
+48 Il buono, il brutto, il cattivo.. Score 8.90
+49 12 Angry Men. Score 8.90
+50 The Dark Knight. Score 8.90
+51 Once upon a Time in Anatolia. Score 8.87
+52 This Is Not a Film. Score 8.84
+53 Fight Club. Score 8.80
+54 Star Wars: Episode V - The Empire Strikes Back. Score 8.80
+55 The Lord of the Rings: The Fellowship of the Ring. Score 8.80
+56 Inception. Score 8.70
+57 Goodfellas. Score 8.70
+58 Star Wars. Score 8.70
+59 Shichinin no samurai. Score 8.70
+60 The Matrix. Score 8.70
+61 The Lord of the Rings: The Two Towers. Score 8.70
+62 Cidade de Deus. Score 8.70
+63 Se7en. Score 8.60
+64 C'era una volta il West. Score 8.60
+65 The Usual Suspects. Score 8.60
+66 Raiders of the Lost Ark. Score 8.60
+67 Rear Window. Score 8.60
+68 It's a Wonderful Life. Score 8.60
+69 Psycho. Score 8.60
+70 Léon. Score 8.60
+71 Sunset Blvd.. Score 8.50
+72 American History X. Score 8.50
+73 Memento. Score 8.50
+74 Apocalypse Now. Score 8.50
+75 Terminator 2: Judgment Day. Score 8.50
+76 Saving Private Ryan. Score 8.50
+77 Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb. Score 8.50
+78 City Lights. Score 8.50
+79 Alien. Score 8.50
+80 Sen to Chihiro no kamikakushi. Score 8.50
+81 North by Northwest. Score 8.50
+82 Modern Times. Score 8.50
+83 Django Unchained. Score 8.50
+84 Citizen Kane. Score 8.50
+85 Back to the Future. Score 8.50
+86 The Shining. Score 8.50
+87 The Pianist. Score 8.50
+88 The Dark Knight Rises. Score 8.50
+89 La vita è bella. Score 8.40
+90 M. Score 8.40
+91 Vertigo. Score 8.40
+92 Paths of Glory. Score 8.40
+93 Taxi Driver. Score 8.40
+94 Double Indemnity. Score 8.40
+95 Aliens. Score 8.40
+96 Toy Story 3. Score 8.40
+97 WALL·E. Score 8.40
+98 Das Leben der Anderen. Score 8.40
+99 Intouchables. Score 8.40
+100 The Green Mile. Score 8.40
+101 A Clockwork Orange. Score 8.40
+102 The Great Dictator. Score 8.40
+103 Le fabuleux destin d'Amélie Poulain. Score 8.40
+104 The Prestige. Score 8.40
+105 To Kill a Mockingbird. Score 8.40
+106 Reservoir Dogs. Score 8.40
+107 Das Boot. Score 8.40
+108 Nuovo Cinema Paradiso. Score 8.40
+109 The Third Man. Score 8.30
+110 Requiem for a Dream. Score 8.30
+111 The Lion King. Score 8.30
+112 The Treasure of the Sierra Madre. Score 8.30
+113 Eternal Sunshine of the Spotless Mind. Score 8.30
+114 Once Upon a Time in America. Score 8.30
+115 Star Wars: Episode VI - Return of the Jedi. Score 8.30
+116 Full Metal Jacket. Score 8.30
+117 L.A. Confidential. Score 8.30
+118 Chinatown. Score 8.30
+119 Oldeuboi. Score 8.30
+120 Singin' in the Rain. Score 8.30
+121 Monty Python and the Holy Grail. Score 8.30
+122 Some Like It Hot. Score 8.30
+123 Ladri di biciclette. Score 8.30
+124 Metropolis. Score 8.30
+125 Rashômon. Score 8.30
+126 Mononoke-hime. Score 8.30
+127 2001: A Space Odyssey. Score 8.30
+128 Indiana Jones and the Last Crusade. Score 8.30
+129 Raging Bull. Score 8.30
+130 Hotaru no haka. Score 8.30
+131 Witness for the Prosecution. Score 8.30
+132 Die Hard. Score 8.30
+133 Batman Begins. Score 8.30
+134 Jodaeiye Nader az Simin. Score 8.30
+135 Yôjinbô. Score 8.30
+136 Inglourious Basterds. Score 8.30
+137 Snatch.. Score 8.30
+138 Per qualche dollaro in più. Score 8.30
+139 The Great Escape. Score 8.20
+140 El laberinto del fauno. Score 8.20
+141 Der Untergang. Score 8.20
+142 Mr. Smith Goes to Washington. Score 8.20
+143 Up. Score 8.20
+144 Toy Story. Score 8.20
+145 The Elephant Man. Score 8.20
+146 Det sjunde inseglet. Score 8.20
+147 Heat. Score 8.20
+148 The General. Score 8.20
+149 The Maltese Falcon. Score 8.20
+150 Blade Runner. Score 8.20
+151 The Kid. Score 8.20
+152 Gran Torino. Score 8.20
+153 Smultronstället. Score 8.20
+154 Scarface. Score 8.20
+155 Fargo. Score 8.20
+156 Ran. Score 8.20
+157 The Big Lebowski. Score 8.20
+158 Touch of Evil. Score 8.20
+159 Cool Hand Luke. Score 8.20
+160 The Gold Rush. Score 8.20
+161 Lock, Stock and Two Smoking Barrels. Score 8.10
+162 Sin City. Score 8.10
+163 Strangers on a Train. Score 8.10
+164 Casino. Score 8.10
+165 The Sixth Sense. Score 8.10
+166 Jaws. Score 8.10
+167 The Thing. Score 8.10
+168 Butch Cassidy and the Sundance Kid. Score 8.10
+169 Trainspotting. Score 8.10
+170 The Wizard of Oz. Score 8.10
+171 Good Will Hunting. Score 8.10
+172 High Noon. Score 8.10
+173 The Avengers. Score 8.10
+174 Hotel Rwanda. Score 8.10
+175 Kill Bill: Vol. 1. Score 8.10
+176 Warrior. Score 8.10
+177 El secreto de sus ojos. Score 8.10
+178 The Grapes of Wrath. Score 8.10
+179 Tonari no Totoro. Score 8.10
+180 Notorious. Score 8.10
+181 V for Vendetta. Score 8.10
+182 Into the Wild. Score 8.10
+183 Finding Nemo. Score 8.10
+184 Life of Brian. Score 8.10
+185 Dial M for Murder. Score 8.10
+186 How to Train Your Dragon. Score 8.10
+187 There Will Be Blood. Score 8.10
+188 The Night of the Hunter. Score 8.10
+189 The Big Sleep. Score 8.10
+190 The Terminator. Score 8.10
+191 Ben-Hur. Score 8.10
+192 Network. Score 8.10
+193 Stand by Me. Score 8.10
+194 Groundhog Day. Score 8.10
+195 Donnie Darko. Score 8.10
+196 Twelve Monkeys. Score 8.10
+197 Dog Day Afternoon. Score 8.10
+198 Mary and Max. Score 8.10
+199 Les quatre cents coups. Score 8.10
+200 Amores perros. Score 8.10
+201 Black Swan. Score 8.10
+202 The Bourne Ultimatum. Score 8.10
+203 Persona. Score 8.10
+204 Hauru no ugoku shiro. Score 8.10
+205 The Killing. Score 8.00
+206 The Graduate. Score 8.00
+207 The Princess Bride. Score 8.00
+208 8½. Score 8.00
+209 Life of Pi. Score 8.00
+210 The Hobbit: An Unexpected Journey. Score 8.00
+211 The Hustler. Score 8.00
+212 Who's Afraid of Virginia Woolf?. Score 8.00
+213 La strada. Score 8.00
+214 Anatomy of a Murder. Score 8.00
+215 The Manchurian Candidate. Score 8.00
+216 The Exorcist. Score 8.00
+217 The Wild Bunch. Score 8.00
+218 The Man Who Shot Liberty Valance. Score 8.00
+219 Rope. Score 8.00
+220 Barry Lyndon. Score 8.00
+221 Stalag 17. Score 8.00
+222 Sleuth. Score 8.00
+223 In the Name of the Father. Score 8.00
+224 Stalker. Score 8.00
+225 Mou gaan dou. Score 8.00
+226 Roman Holiday. Score 8.00
+227 Pirates of the Caribbean: The Curse of the Black Pearl. Score 8.00
+228 The Truman Show. Score 8.00
+229 Salinui chueok. Score 8.00
+230 Monsters, Inc.. Score 8.00
+231 District 9. Score 8.00
+232 Per un pugno di dollari. Score 8.00
+233 Harry Potter and the Deathly Hallows: Part 2. Score 8.00
+234 Yip Man. Score 8.00
+235 Le scaphandre et le papillon. Score 8.00
+236 Ratatouille. Score 8.00
+237 Star Trek. Score 8.00
+238 A Streetcar Named Desire. Score 8.00
+239 Jurassic Park. Score 8.00
+240 La haine. Score 8.00
+241 Shutter Island. Score 8.00
+242 Beauty and the Beast. Score 8.00
+243 Incendies. Score 8.00
+244 3 Idiots. Score 8.00
+245 Rosemary's Baby. Score 8.00
+246 Kaze no tani no Naushika. Score 8.00
+247 Taare Zameen Par. Score 8.00
+248 Harvey. Score 8.00
+249 Mystic River. Score 8.00
+250 Papillon. Score 8.00
+251 Manhattan. Score 8.00
+252 The Perks of Being a Wallflower. Score 8.00
+253 Nosferatu, eine Symphonie des Grauens. Score 8.00
+254 Bom yeoreum gaeul gyeoul geurigo bom. Score 8.00
+255 Trois couleurs: Rouge. Score 8.00
+256 The Help. Score 7.90
+257 The Untouchables. Score 7.90
+258 Fa yeung nin wa. Score 7.90
+259 Festen. Score 7.90
+260 The Wrestler. Score 7.90
+261 Big Fish. Score 7.90
+262 Argo. Score 7.80
+263 The Hurt Locker. Score 7.80
+264 Crash. Score 7.80
+265 Chicago. Score 7.80
+266 Shakespeare in Love. Score 7.80
+267 Titanic. Score 7.80
+268 The English Patient. Score 7.80
+269 Dances With Wolves. Score 7.80
+270 Driving Miss Daisy. Score 7.80
+271 The Last Emperor. Score 7.80
+272 Out of Africa. Score 7.80
+273 Terms of Endearment. Score 7.80
+274 Chariots of Fire. Score 7.80
+275 Ordinary People. Score 7.80
+276 Kramer vs. Kramer. Score 7.80
+277 The French Connection. Score 7.80
+278 Patton. Score 7.80
+279 Midnight Cowboy. Score 7.80
+280 Oliver!. Score 7.80
+281 In the Heat of the Night. Score 7.80
+282 A Man for All Seasons. Score 7.80
+283 The Sound of Music. Score 7.80
+284 My Fair Lady. Score 7.80
+285 Tom Jones. Score 7.80
+286 West Side Story. Score 7.80
+287 B. Score 7.80
+288 Gigi. Score 7.80
+289 Around the World in 80 Days. Score 7.80
+290 Marty. Score 7.80
+291 From Here to Eternity. Score 7.80
+292 The Greatest Show on Earth. Score 7.80
+293 An American in Paris. Score 7.80
+294 All the Kings Men. Score 7.80
+295 Hamlet. Score 7.80
+296 Gentleman's Agreement. Score 7.80
+297 The Best Years of Our Lives. Score 7.80
+298 The Lost Weekend. Score 7.80
+299 Going My Way. Score 7.80
+300 Mrs. Miniver. Score 7.80
+301 How Green Was My Valley. Score 7.80
+302 You Can't Take It with You. Score 7.80
+303 The Life of Emile Zola. Score 7.80
+304 The Great Ziegfeld. Score 7.80
+305 Mutiny on the Bounty. Score 7.80
+306 Cavalcade. Score 7.80
+307 Grand Hotel. Score 7.80
+308 Cimarron. Score 7.80
+309 The Broadway Melody. Score 7.80
+310 Wings. Score 7.80
