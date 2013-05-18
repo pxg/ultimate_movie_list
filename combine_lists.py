@@ -54,7 +54,8 @@ def get_oscars_best_picture_list():
         }
         film_list.append(film)
     f.close()
-
+    # Reverse as we want newest first not last
+    film_list.reverse()
     return film_list
 
 
@@ -138,9 +139,8 @@ def combine_oscars(combined_list, oscars_list):
     Take the combined list add all best pictures oscars winners. Adjust scores
     for existing films
     """
-    #TODO: can we do this without the nested loops?
+    #TODO: can we do this more elegently without the nested loops?
     low_score = combined_list[-1]['score'] - Decimal(0.1)
-    no_match = 0
     for oscar_film in oscars_list:
         exists = False
         for film in combined_list:
@@ -148,14 +148,10 @@ def combine_oscars(combined_list, oscars_list):
                 film['score'] += 1
                 film['oscar'] = 'Best Picture'
                 exists = True
-                # print film
-                # sys.exit()
         if exists is False:
             oscar_film['score'] = low_score  #TODO: we should get IMDB rating here?
             combined_list.append(oscar_film)
-            no_match += 1
 
-    #print 'no_match: %s' % no_match
     combined_list = sorted(combined_list, key=lambda k: k['score'])
     combined_list.reverse()
     # argo is not in combined list but the artist is
@@ -172,4 +168,4 @@ combined_list = combine_oscars(combined_list, oscars_list)
 pos = 0
 for film in combined_list:
     pos += 1
-    print '%s %s. Score %s' % (pos, film['name'], film['score'])
+    print('%s %s. Score %.2f' % (pos, film['name'], film['score']))
