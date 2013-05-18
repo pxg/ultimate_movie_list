@@ -1,6 +1,33 @@
 import sys
-from pprint import pprint
+from BeautifulSoup import BeautifulSoup
 from decimal import Decimal
+from pprint import pprint
+
+
+def get_oscars_list():
+    """
+    Read the oscars file and return a list of dicts
+    """
+    file = 'oscars.html'
+    handler = open(file).read()
+    soup = BeautifulSoup(handler)
+    film_list = []
+
+    for row in soup.findAll('tr'):
+        #TODO: add more elegant check instead of dirty try catch
+        try:
+            links = row.findAll('a')
+            cells = row.findAll('td')
+            film = {
+                'name': links[0].contents,
+                'year': links[1].contents,
+                'awards': cells[2].contents,
+                'nominations': cells[3].contents
+            }
+            film_list.append(film)
+        except:
+            pass
+    return film_list
 
 
 def get_imdb_list():
@@ -10,16 +37,16 @@ def get_imdb_list():
     list_file = 'imdb.txt'
     name_column = 26
     f = open(list_file, 'r')
-    list = []
+    film_list = []
     pos = 0
 
     for line in f:
         pos += 1
         words = line.split()
         film = {'pos': pos, 'score': Decimal(words[2]), 'name': line[name_column:-1]}
-        list.append(film)
+        film_list.append(film)
     f.close()
-    return list
+    return film_list
 
 
 def get_bfi_list():
@@ -28,16 +55,16 @@ def get_bfi_list():
     """
     list_file = 'bfi_sight_and_sound_2012.txt'
     f = open(list_file, 'r')
-    list = []
+    film_list = []
 
     for line in f:
         words = line.split('    ')
         #NOTE: pos is not the position in the pyton list but in the original
         # list so is not always an integer due to joint places
         film = {'pos': words[0], 'name': words[1][:-1]}
-        list.append(film)
+        film_list.append(film)
     f.close()
-    return list
+    return film_list
 
 
 def calc_bfi_scores(bfi_list, imdb_list):
