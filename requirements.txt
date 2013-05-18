@@ -1,5 +1,5 @@
 BeautifulSoup==3.2.1
-Scrapy==0.16.4
-Twisted==13.0.0
+Flask==0.9
+Jinja2==2.6
 w3lib==1.2
 wsgiref==0.1.2
