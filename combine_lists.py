@@ -72,8 +72,15 @@ def get_imdb_list():
         pos += 1
         words = line.split()
         name = line[name_column:-1]
-        film = {'pos': pos, 'score': Decimal(words[2]), 'name': name}
-        #TODO: get list from name
+        # could be problematic is there are brackets in the film name
+        year = name[name.find('(') + 1:name.find(')')]
+        name = name.replace('(' + year + ')', '')
+        film = {
+            'pos': pos,
+            'score': Decimal(words[2]),
+            'name': name.strip(),
+            'year': year
+        }
         film_list.append(film)
     f.close()
     return film_list
@@ -139,7 +146,7 @@ def combine_oscars(combined_list, oscars_list):
         else:
             print 'no match' + film['name']
 
-    print combined_list
+    #print combined_list
     sys.exit()
     # is film in combined_list
     # yes add the awards number, increment score by 1
@@ -148,8 +155,6 @@ def combine_oscars(combined_list, oscars_list):
     return combined_list
 
 imdb_list = get_imdb_list()
-pprint(imdb_list)
-sys.exit()
 bfi_list = get_bfi_list()
 bfi_list = calc_scores(bfi_list, imdb_list)
 oscars_list = get_oscars_best_picture_list()
