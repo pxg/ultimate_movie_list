@@ -6,7 +6,8 @@ from pprint import pprint
 
 def get_oscars_list():
     """
-    Read the oscars file and return a list of dicts
+    Read the oscars file and return a list of dicts of every single film which
+    has ever won an oscar
     """
     file = 'oscars.html'
     handler = open(file).read()
@@ -37,6 +38,26 @@ def get_oscars_list():
     return film_list
 
 
+def get_oscars_best_picture_list():
+    """
+    Get a list of all films who have ever won a best picture oscar
+    """
+    list_file = 'oscar_best_picture_list.txt'
+    f = open(list_file, 'r')
+    film_list = []
+
+    for line in f:
+        words = line.split('-')
+        film = {
+            'year': words[0][:-1],
+            'name': words[1][2:-2]
+        }
+        film_list.append(film)
+    f.close()
+
+    return film_list
+
+
 def get_imdb_list():
     """
     Read the imdb file and return a list of dicts
@@ -50,7 +71,8 @@ def get_imdb_list():
     for line in f:
         pos += 1
         words = line.split()
-        film = {'pos': pos, 'score': Decimal(words[2]), 'name': line[name_column:-1]}
+        name = line[name_column:-1]
+        film = {'pos': pos, 'score': Decimal(words[2]), 'name': name}
         #TODO: get list from name
         film_list.append(film)
     f.close()
@@ -103,16 +125,37 @@ def combine_lists(bfi_list, imdb_list):
     combined_list.reverse()
     return combined_list
 
+
+def combine_oscars(combined_list, oscars_list):
+    """
+    Take the combined list add all best pictures oscars winners. Adjust scores
+    for existing films
+    """
+    # loop oscars_list
+    for film in oscars_list:
+        #print film
+        if any(x['name'] == film['name'] for x in combined_list):
+            print 'match ' + film['name']
+        else:
+            print 'no match' + film['name']
+
+    print combined_list
+    sys.exit()
+    # is film in combined_list
+    # yes add the awards number, increment score by 1
+    # no then add to the bottom of the list (how many nos?)
+    # argo is not in combined list but the artist is
+    return combined_list
+
 imdb_list = get_imdb_list()
+pprint(imdb_list)
+sys.exit()
 bfi_list = get_bfi_list()
 bfi_list = calc_scores(bfi_list, imdb_list)
-oscars_list = get_oscars_list()
-oscars_list = calc_scores(oscars_list, imdb_list)
-
-pprint(oscars_list)
-sys.exit()
+oscars_list = get_oscars_best_picture_list()
 
 combined_list = combine_lists(bfi_list, imdb_list)
+combined_list = combine_oscars(combined_list, oscars_list)
 
 pos = 0
 for film in combined_list:

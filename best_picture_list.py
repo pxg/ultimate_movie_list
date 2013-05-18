@@ -6,7 +6,6 @@ film_list = []
 
 for line in f:
     words = line.split('-')
-    #print words
     film = {
         'year': words[0][:-1],
         'name': words[1][2:-2]
