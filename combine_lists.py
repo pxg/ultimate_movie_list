@@ -18,15 +18,22 @@ def get_oscars_list():
         try:
             links = row.findAll('a')
             cells = row.findAll('td')
-            film = {
-                'name': links[0].contents,
-                'year': links[1].contents,
-                'awards': cells[2].contents,
-                'nominations': cells[3].contents
-            }
-            film_list.append(film)
-        except:
+            awards = int(cells[2].contents[0])
+
+            # Filter only nominations
+            if awards > 0:
+                film = {
+                    'name': links[0].contents[0],
+                    'year': links[1].contents[0],
+                    'awards': awards,
+                    'nominations': cells[3].contents
+                }
+                film_list.append(film)
+        except Exception, e:
             pass
+
+    film_list = sorted(film_list, key=lambda k: k['awards'])
+    film_list.reverse()
     return film_list
 
 
@@ -82,11 +89,15 @@ def calc_bfi_scores(bfi_list, imdb_list):
         score -= score_interval
     return bfi_list
 
-imdb_list = get_imdb_list()
-bfi_list = get_bfi_list()
+
+def calc_oscars_scores(oscars_list, imdb_list):
+    """
+    Assign each oscar winner a score based on the imdb scores
+    """
+    return oscars_list
 
 
-#TODO: just accept a list of lists and combine so we don't have to keep adding
+#TODO? just accept a list of lists and combine so we don't have to keep adding
 # new parameters for the function
 def combine_lists(bfi_list, imdb_list):
     """
@@ -98,7 +109,15 @@ def combine_lists(bfi_list, imdb_list):
     combined_list.reverse()
     return combined_list
 
+imdb_list = get_imdb_list()
+bfi_list = get_bfi_list()
 bfi_list = calc_bfi_scores(bfi_list, imdb_list)
+oscars_list = get_oscars_list()
+oscars_list = calc_oscars_scores(oscars_list, imdb_list)
+
+pprint(oscars_list)
+sys.exit()
+
 combined_list = combine_lists(bfi_list, imdb_list)
 
 pos = 0
