@@ -1,0 +1,11 @@
+<h1>Ultimate Film List{% if title %}: {{ title }}{% endif %}</h1>
+
+{% if url %}
+<p>Original data from <a href="{{ url}}">{{ url }}</a></p>
+{% endif %}
+
+<ol>
+{% for film in film_list %}
+    <li>{{ film.name|safe }}</li>
+{% endfor %}
+</ol>

@@ -1,7 +1,5 @@
-import sys
 from BeautifulSoup import BeautifulSoup
 from decimal import Decimal
-from pprint import pprint
 
 
 def get_oscars_list():
@@ -30,7 +28,7 @@ def get_oscars_list():
                     'nominations': cells[3].contents
                 }
                 film_list.append(film)
-        except Exception, e:
+        except Exception:
             pass
 
     film_list = sorted(film_list, key=lambda k: k['awards'])

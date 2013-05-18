@@ -1,19 +1,69 @@
-from flask import Flask, render_template
+import json
+import decimal
+from flask import Flask, Response, render_template, jsonify
 from combine_lists import *
 app = Flask(__name__)
 
 
+class DecimalEncoder(json.JSONEncoder):
+    """
+    Required to stop annoying problem with json.dumps and decimal types
+    http://stackoverflow.com/questions/8652497/caught-typeerror-while-rendering-decimal51-8-is-not-json-serializable
+    """
+    def default(self, o):
+        if isinstance(o, decimal.Decimal):
+            return float(o)
+        super(DecimalEncoder, self).default(o)
+
+
 @app.route('/')
-def home():
-    name = 'PXG'
+def index():
+    return render_template('index.html')
+
+
+@app.route('/ultimate-list')
+def ultimate_list():
     film_list = get_ultimate_movie_list()
-    return render_template('index.html', film_list=film_list)
-    # Explain what this site is
-    # Link to the main list
-    # Link to the IMDB top 250 JSON
-    # Link to the BFI top 10 2012
-    # Link to the Oscar best picture winnners
-    # Link to all Oscar winners
+    return render_template('list.html', film_list=film_list)
+
+#TODO: Link to all Oscar winners
+
+@app.route('/ultimate-list/json')
+def ultimate_list_api():
+    film_list = get_ultimate_movie_list()
+    return Response(json.dumps(film_list, cls=DecimalEncoder),
+                    mimetype='application/json')
+
+
+@app.route('/imdb')
+def imdb():
+    film_list = get_imdb_list()
+    return render_template('list.html',
+                           film_list=film_list,
+                           title='IMDB Top 250',
+                           url='http://www.imdb.com/chart/top')
+
+
+@app.route('/imdb/json')
+def imdb_api():
+    film_list = get_imdb_list()
+    return Response(json.dumps(film_list, cls=DecimalEncoder),
+                    mimetype='application/json')
+
+
+@app.route('/sight-and-sound')
+def imdb():
+    film_list = get_imdb_list()
+    return render_template('list.html',
+                           film_list=film_list,
+                           title='IMDB Top 250',
+                           url='http://www.imdb.com/chart/top')
+
+@app.route('/sight-and-sound/json')
+def imdb_api():
+    film_list = get_imdb_list()
+    return Response(json.dumps(film_list, cls=DecimalEncoder),
+                    mimetype='application/json')
 
 if __name__ == '__main__':
     app.debug = True
