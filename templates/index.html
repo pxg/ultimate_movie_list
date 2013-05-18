@@ -1,1 +1,7 @@
-<h1>Hello {{ name }}</h1>
+<h1>Ultimate Film List</h1>
+
+<ol>
+{% for film in film_list %}
+    <li>{{ film.name|safe }}</li>
+{% endfor %}
+</ol>

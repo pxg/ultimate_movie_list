@@ -72,7 +72,7 @@ def get_imdb_list():
     for line in f:
         pos += 1
         words = line.split()
-        name = line[name_column:-1]
+        name = line[name_column:-1].decode('utf-8')
         # could be problematic is there are brackets in the film name
         year = name[name.find('(') + 1:name.find(')')]
         name = name.replace('(' + year + ')', '')
@@ -157,15 +157,20 @@ def combine_oscars(combined_list, oscars_list):
     # argo is not in combined list but the artist is
     return combined_list
 
-imdb_list = get_imdb_list()
-bfi_list = get_bfi_list()
-bfi_list = calc_scores(bfi_list, imdb_list)
-oscars_list = get_oscars_best_picture_list()
 
-combined_list = combine_lists(bfi_list, imdb_list)
-combined_list = combine_oscars(combined_list, oscars_list)
+def get_ultimate_movie_list():
+    """
+    Get and combine all the other lists
+    """
+    imdb_list = get_imdb_list()
+    bfi_list = get_bfi_list()
+    bfi_list = calc_scores(bfi_list, imdb_list)
+    oscars_list = get_oscars_best_picture_list()
+    combined_list = combine_lists(bfi_list, imdb_list)
+    return combine_oscars(combined_list, oscars_list)
 
-pos = 0
-for film in combined_list:
-    pos += 1
-    print('%s %s. Score %.2f' % (pos, film['name'], film['score']))
+if __name__ == '__main__':
+    pos = 0
+    for film in get_ultimate_movie_list():
+        pos += 1
+        print('%s %s. Score %.2f' % (pos, film['name'], film['score']))
