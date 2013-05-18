@@ -138,19 +138,25 @@ def combine_oscars(combined_list, oscars_list):
     Take the combined list add all best pictures oscars winners. Adjust scores
     for existing films
     """
-    # loop oscars_list
-    for film in oscars_list:
-        #print film
-        if any(x['name'] == film['name'] for x in combined_list):
-            print 'match ' + film['name']
-        else:
-            print 'no match' + film['name']
+    #TODO: can we do this without the nested loops?
+    no_match = 0
+    for oscar_film in oscars_list:
+        exists = False
+        for film in combined_list:
+            if film['name'] == oscar_film['name']:
+                film['score'] += 100
+                film['oscar'] = 'Best Picture'
+                exists = True
+                # print film
+                # sys.exit()
+        if exists is False:
+            oscar_film['score'] = 0  #TODO: we should get IMDB rating here?
+            combined_list.append(oscar_film)
+            no_match += 1
 
-    #print combined_list
-    sys.exit()
-    # is film in combined_list
-    # yes add the awards number, increment score by 1
-    # no then add to the bottom of the list (how many nos?)
+    #print 'no_match: %s' % no_match
+    combined_list = sorted(combined_list, key=lambda k: k['score'])
+    combined_list.reverse()
     # argo is not in combined list but the artist is
     return combined_list
 
