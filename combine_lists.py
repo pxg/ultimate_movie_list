@@ -51,6 +51,7 @@ def get_imdb_list():
         pos += 1
         words = line.split()
         film = {'pos': pos, 'score': Decimal(words[2]), 'name': line[name_column:-1]}
+        #TODO: get list from name
         film_list.append(film)
     f.close()
     return film_list
@@ -74,27 +75,20 @@ def get_bfi_list():
     return film_list
 
 
-def calc_bfi_scores(bfi_list, imdb_list):
+def calc_scores(unscored_list, master_list):
     """
     Calculate the BFI scores from their position and the IMDB scores
     """
-    num_scores = len(bfi_list)
-    best_score = imdb_list[0]['score']
-    worst_score = imdb_list[num_scores]['score']
+    num_scores = len(unscored_list)
+    best_score = master_list[0]['score']
+    worst_score = master_list[num_scores]['score']
     score_interval = (best_score - worst_score) / num_scores
     score = best_score
 
-    for film in bfi_list:
-        film['score'] = score
+    for item in unscored_list:
+        item['score'] = score
         score -= score_interval
-    return bfi_list
-
-
-def calc_oscars_scores(oscars_list, imdb_list):
-    """
-    Assign each oscar winner a score based on the imdb scores
-    """
-    return oscars_list
+    return unscored_list
 
 
 #TODO? just accept a list of lists and combine so we don't have to keep adding
@@ -111,9 +105,9 @@ def combine_lists(bfi_list, imdb_list):
 
 imdb_list = get_imdb_list()
 bfi_list = get_bfi_list()
-bfi_list = calc_bfi_scores(bfi_list, imdb_list)
+bfi_list = calc_scores(bfi_list, imdb_list)
 oscars_list = get_oscars_list()
-oscars_list = calc_oscars_scores(oscars_list, imdb_list)
+oscars_list = calc_scores(oscars_list, imdb_list)
 
 pprint(oscars_list)
 sys.exit()
