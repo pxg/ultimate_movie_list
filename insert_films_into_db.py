@@ -1,43 +1,19 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import Column, Integer, String
+from models.sa_film import get_film_class
 
 # 1. open db connection
 app = Flask(__name__)
 app.config.from_pyfile('app.cfg')
 engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'], echo=True)
+db = SQLAlchemy(app)
 
-# class for data mapping
-Base = declarative_base()
-
-
-class User(Base):
-    __tablename__ = 'users'
-
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    fullname = Column(String)
-    assword = Column(String)
-
-    def __init__(self, name, fullname, password):
-        self.name = name
-        self.fullname = fullname
-        self.password = password
-
-    def __repr__(self):
-        return "<User('%s','%s', '%s')>" % (self.name, self.fullname, self.password)
-
-Base.metadata.create_all(engine)
-# 2. insert one film
-ed_user = User('ed', 'Ed Jones', 'edspassword')
+Film = get_film_class(db.Model)
+film = Film(name='blah blah', year='1938', director='asdf')
 Session = sessionmaker(bind=engine)
 session = Session()
-#session.add(ed_user)
-#u1 = User(name='ed', fullname='Ed Jones', password='foobar')
-#our_user = session.query(User).filter_by(name='ed').first()
 session.commit()
 
 # 3. get all films
