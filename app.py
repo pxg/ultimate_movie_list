@@ -1,13 +1,13 @@
 import json
 import decimal
 from models.database import db_session
-from flask import Flask, Response, redirect, render_template, request, \
-session, url_for
-from flask.ext.admin import Admin, BaseView, expose
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.auth import Auth, AuthUser, login_required, logout
-from models.sa import get_user_class
 from combine_lists import *
+from flask import Flask, Response, redirect, render_template, request, session, url_for
+from flask.ext.admin import Admin, BaseView, expose
+from flask.ext.admin.contrib.sqlamodel import ModelView
+from flask.ext.auth import Auth, login_required, logout  #AuthUser
+from flask.ext.sqlalchemy import SQLAlchemy
+from models.sa import get_user_class
 
 app = Flask(__name__)
 app.config.from_pyfile('app.cfg')
@@ -39,11 +39,18 @@ class MyView(BaseView):
     def index(self):
         return self.render('admin/index.html')
 
+
+class UserModelView(ModelView):
+    def is_accessible(self):
+        user = User.load_current_user()
+        return user
+
 admin = Admin(app, name='Ultimate Movie List Admin')
 admin.add_view(MyView(name='Hello 1', endpoint='test1', category='Test'))
 admin.add_view(MyView(name='Hello 2', endpoint='test2', category='Test'))
 admin.add_view(MyView(name='Hello 3', endpoint='test3', category='Test'))
 admin.add_view(MyView(name='IMDB Movies'))
+admin.add_view(UserModelView(User, db.session))
 
 
 # JSON generation (should we move to it's own file)? ###########################
