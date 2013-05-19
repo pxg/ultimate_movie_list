@@ -12,6 +12,8 @@ def get_film_class(declarative_base):
         """
         Implementation of User for SQLAlchemy.
         """
+        # does the below line break flask?
+        __tablename__ = 'film'
         id = Column(Integer, primary_key=True)
         name = Column(String(80), unique=True, nullable=False)
         director = Column(String(80), unique=True, nullable=True)  # TODO: move to it's own table
