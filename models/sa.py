@@ -46,6 +46,10 @@ def get_user_class(declarative_base):
                 'modified': self.modified,
             }
 
+        # # https://github.com/mrjoes/flask-admin/blob/master/examples/auth/auth.py
+        # def is_authenticated(self):
+        #     return True
+
         @classmethod
         def load_current_user(cls, apply_timeout=True):
             data = get_current_user_data(apply_timeout)

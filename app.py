@@ -29,11 +29,11 @@ User = get_user_class(db.Model)
 
 # Admin settings (should we move to it's own file)? ############################
 class MyView(BaseView):
-    # def is_accessible(self):
-    #     # Does this need to change?
-    #     #return login.current_user.is_authenticated()
-    #     #User = get_user_class(db.Model)
-    #     return User.is_authenticated()
+    def is_accessible(self):
+        # can we force a redirect? just hides menu
+        user = User.load_current_user()
+        return user
+        #return False
 
     @expose('/')
     def index(self):
