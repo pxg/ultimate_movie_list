@@ -1,5 +1,4 @@
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models.sa_film import get_film_class
@@ -17,7 +16,6 @@ Session = sessionmaker(bind=engine)
 session = Session()
 session.add(film)
 session.commit()
-#session.flush()
 
 # 3. get all films
 
