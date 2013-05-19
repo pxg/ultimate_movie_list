@@ -5,9 +5,10 @@ from combine_lists import *
 from flask import Flask, Response, redirect, render_template, request, session, url_for
 from flask.ext.admin import Admin, BaseView, expose
 from flask.ext.admin.contrib.sqlamodel import ModelView
-from flask.ext.auth import Auth, login_required, logout  #AuthUser
+from flask.ext.auth import Auth, login_required, logout
 from flask.ext.sqlalchemy import SQLAlchemy
 from models.sa import get_user_class
+from models.sa_film import get_film_class
 
 app = Flask(__name__)
 app.config.from_pyfile('app.cfg')
@@ -25,6 +26,7 @@ def shutdown_session(exception=None):
 ## Instantiate authentication
 auth = Auth(app, login_url_name='login')
 User = get_user_class(db.Model)
+Film = get_film_class(db.Model)
 
 
 # Admin settings (should we move to it's own file)? ############################
@@ -40,7 +42,14 @@ class MyView(BaseView):
         return self.render('admin/index.html')
 
 
+#TODO: make them both extend AuthModelView, move out of this file
 class UserModelView(ModelView):
+    def is_accessible(self):
+        user = User.load_current_user()
+        return user
+
+
+class FilmModelView(ModelView):
     def is_accessible(self):
         user = User.load_current_user()
         return user
@@ -51,6 +60,7 @@ admin.add_view(MyView(name='Hello 2', endpoint='test2', category='Test'))
 admin.add_view(MyView(name='Hello 3', endpoint='test3', category='Test'))
 admin.add_view(MyView(name='IMDB Movies'))
 admin.add_view(UserModelView(User, db.session))
+admin.add_view(FilmModelView(Film, db.session))
 
 
 # JSON generation (should we move to it's own file)? ###########################
