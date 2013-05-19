@@ -66,7 +66,7 @@ def json_api_response(list):
                     mimetype='application/json')
 
 
-# Login view ###################################################################
+# Auth views ###################################################################
 def login():
     if request.method == 'POST':
         username = request.form['username']
@@ -84,6 +84,16 @@ def login():
             flash('Incorrect username. Please try again')
             return render_template('login.html')
     return render_template('login.html')
+
+
+def logout_view():
+    user_data = logout()
+    if user_data is None:
+        msg = 'No user to log out.'
+        return render_template('logout.html', msg=msg)
+    else:
+        msg = 'Logged out user {0}.'.format(user_data['username'])
+        return render_template('logout.html', msg=msg)
 
 
 # Actual Ultimate Film List Views (should we move to it's own file)? ###########
@@ -152,10 +162,11 @@ def oscar_all():
 # URLS #########################################################################
 app.add_url_rule('/', 'index', index)
 app.add_url_rule('/login/', 'login', login, methods=['GET', 'POST'])
+app.add_url_rule('/logout/', 'logout', logout_view)
 
 if __name__ == '__main__':
     app.debug = True
-    # Is this needed?
+    # Is this needed? What's the tmp file doing?
     try:
         open('/tmp/app.db')
     except IOError:
