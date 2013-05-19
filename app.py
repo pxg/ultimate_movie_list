@@ -25,7 +25,7 @@ def shutdown_session(exception=None):
 
 ## Instantiate authentication
 auth = Auth(app, login_url_name='login')
-User = get_user_class(db.Model)
+User = get_user_class(db.Model) # research if this is needed? Esepecially the decalarative base
 Film = get_film_class(db.Model)
 
 
